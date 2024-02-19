@@ -166,6 +166,41 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
+a.buttonn {
+    display: inline-block;
+    padding: 10px 45px 10px 45px;
+    background-color: #6167d3;
+    color: black;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: black;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: auto;
+    height: auto;
+    margin: 25px;
+    font-size: 14px;
+    text-decoration: none; 
+  }
+
+a.buttonn-msg-btn{
+    display: inline-block;
+    padding: 10px 40px 10px 40px;
+    background-color: #ededed;
+    color: black;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: black;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: auto;
+    height: auto;
+    margin: 5px 0px 0px 25px;
+    font-size: 14px;
+    text-decoration: none; 
+}
+
+
 .tutor button {
     background-color: #6167d3;
     color: black;
@@ -181,19 +216,24 @@ nav a:hover {
 }
 
 .tutor button.msg-btn{
-    background-color: #ffffff;
+    background-color: #ededed;
     margin: 0px 30px;
 }
 
 .tutor button.msg-btn-detsils{
-    background-color: #ffffff;
+    background-color: #ededed;
     margin: 0px 20px 10px 30px;
     
+}
+
+.tutor a:hover {
+    background-color: #273e81;
 }
 
 .tutor button:hover {
     background-color: #273e81;
 }
+
 
 /* .tutor1-img img{
     border-radius: 50%;
@@ -227,19 +267,6 @@ nav a:hover {
     cursor: pointer;
 }
 
-.apply-btn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.apply-btn:hover {
-    background-color: #45a049;
-}
 
 .about-tutor{
     width: 700px;
@@ -541,8 +568,8 @@ td{
 }
 .confirm-time-btn {
     padding: 8px 16px;
-    background-color: #007bff;
-    color: #ffffff;
+    background-color: #6167d3;
+    color: black;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -551,7 +578,7 @@ td{
 }
 
 .confirm-time-btn:hover {
-    background-color: #0056b3;
+    background-color: #6167d3;
 }
 
 .confirm-time-btn:disabled {
