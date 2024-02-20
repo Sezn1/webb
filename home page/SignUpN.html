@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html>
+
+<!---------------------HEAD---------------------------->
 <head>
-  <title>SignuUp Page</title>
+  <title>TalkTandem | SignUp</title>
+  <link rel="stylesheet" type="text/css" href="custom-styles.css">
+  <link rel="shortcut icon" href="Logo white .jpeg" type="image/x-icon">
 </head>
+
+<!---------------------BODY---------------------------->
 <body>
   <h1>Signup</h1>
   <form method="POST" >
@@ -43,16 +49,13 @@
 <br><br>
     
 <!--------------------GENDER------------------------------>
-  <form>
     <label for="Gender">Gender:</label>
-      <input type="radio" name="gender" value="male">
+      <input type="radio" name="gender" value="male"required>
       Male
-    </label>
-    <label>
-      <input type="radio" name="gender" value="female">
+  
+      <input type="radio" name="gender" value="female"required>
       Female
-    </label>
-  </form><br>
+    </label> <br><br>
 
     <label for="Email">Email:</label>
     <input type="Email" id="email" name="Email" required><br><br>
@@ -70,8 +73,15 @@
     <input type="text" id="location" name="location" required><br><br>
 
     <input type="submit" value="Sign Up">
-  </form>
+    <h5>Already have an account? <a href="loginN.html">Login</a></h5>
+
+</form>
+
+
+
 </body>
+
+
 </html>
 
 

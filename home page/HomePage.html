@@ -22,19 +22,24 @@
 <!---------------------BODY---------------------------->
 <body>
     <header>
-        <div class="logo">
+       <div class="logo">
             <img src="logo bule.jpeg">
             <h1>Talk Tandem</h1>
         </div>
         <nav class="mainMinue">
             <ul>
-                <li><a href="HomePage.html">Home</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropbtn">Login</a>
+                <div class="dropdown-content">
+                    <a href="loginN.html">Native Speaker</a>
+                    <a href="loginL.html">Language Learner</a>
+                </div>
+            </li>
                 <li><a href="#about-section">ِAbout us</a></li>
                 <li><a href="#faq-section">FAQs</a></li>
-                <li><a href="#">login</a></li>
-                
+               <li><a href="HomePage.html">Home</a></li>
             </ul>
-        </nav>
+        </nav> 
     </header>
 
     <main>
@@ -49,7 +54,7 @@
             <img src="language-learner.png" alt="Language Learner">
             <h3>Language Learner</h3>
             <p>Sign up and find language partners to practice your target language.</p>
-            <a href="WEEB/SignUpL.html">
+            <a href="SignUpL.html">
               <button class="feature-button">Let's get started</button>
             </a>
           </div>
@@ -57,7 +62,7 @@
             <img src="language-partner.png" alt="Language Partner">
             <h3>Language Partner</h3>
             <p>Share your language skills and help others learn your native language.</p>
-            <a href="WEEB/SignUpN.html">
+            <a href="SignUpN.html">
               <button class="feature-button">Let's get started</button>
             </a>
           </div>
