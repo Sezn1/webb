@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>English Language Tutors</title>
+    <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="logo-bule.jpeg" alt="logo">
+        <h1>Talk Tandem</h1>
+    </div>
+    <nav class="mainMinue">
+        <ul>
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="#about-section">ِAbout us</a></li>
+            <li><a href="#faq-section">FAQs</a></li>
+            <li><a href="#">login</a></li>
+            
+        </ul>
+    </nav>
+</header>
+
+    <div class="tutor-container">
+        <div class="details tutor">
+            <div class="tutor-data-details">
+                <div class="tutor-img">
+                    <img src="img2.jpg" alt="Tutor 2">
+                </div>
+                <div class="tutor-data">
+                    <div>
+                        <h2>Martin H.</h2>
+                        <p><span class="data"><i class="fas fa-map-marker-alt"></i></span> France</p>
+                        <p><span class="data"><i class="fas fa-user"></i></span> Teaches French sessions</p>
+                        <p><span class="data"><i class="fas fa-language"></i></span> Speaks English (C2), French (Native), Indonesian (A1), Spanish (B1)</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tutor-action tutor-action-details">
+                <h2><span class="rate"><i class="fas fa-star"></i></span> 4.8</h2>
+                <p>Price per Hour: $40</p>
+                <button id="openModal">Book Session</button>
+                <button id="openModal2" class="msg-btn-detsils">Send Message</button>
+            </div>
+        </div>
+        
+        <div class="about-tutor">
+            <h3>About Tutor</h3>           
+            Hello I'm Martin, 29 years old. I am passionate about education and teaching. I currently live in Mexico
+            I have been working as a tutor for 5 years, I hold a DAEFLE (Diploma to teach French as a second language). I like to adapt my lessons to each student's needs and level, while keeping them as interactive and fun as possible.
+ 
+<p>
+
+    <p id="textarea" style="display: none">Book a trial lesson with me so that we can discuss your goals and how you can achieve them. Tell me in advance if you have a specific need (help for your assignments, improve your conversation etc.
+        </p>
+        
+        <a id="seeMore" onclick="toggleSeeMore()" href="javascript:void(0);">See More</a>
+        <p>
+        
+        </div>
+        
+
+        <div class="feedback-section">
+            <h3>User Feedback</h3>
+            <div class="overall-rate">
+                <div class="stars-box">
+                    <span class="average-rating">4.5</span>
+                    <div>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-row">
+                        <div class="progress-bar" style="width: 70%;"></div>
+                        <span class="star-rating">5 Stars</span>
+                    </div>
+                    <div class="progress-row">
+                        <div class="progress-bar" style="width: 20%;"></div>
+                        <span class="star-rating">4 Stars</span>
+                    </div>
+                    <div class="progress-row">
+                        <div class="progress-bar" style="width: 5%;"></div>
+                        <span class="star-rating">3 Stars</span>
+                    </div>
+                    <div class="progress-row">
+                        <div class="progress-bar" style="width: 3%;"></div>
+                        <span class="star-rating">2 Stars</span>
+                    </div>
+                    <div class="progress-row">
+                        <div class="progress-bar" style="width: 2%;"></div>
+                        <span class="star-rating">1 Star</span>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Feedbacks -->
+            <div class="feedback">
+                <h3>John Smith</h3>
+                <p>Excellent tutor! Very knowledgeable and patient. Highly recommend!</p>
+            </div>
+        
+            <div class="feedback">
+                <h3>Jane Doe</h3>
+                <p>Not satisfied with the teaching approach. Expected more interactive sessions.</p>
+            </div>
+        </div>      
+    </div>
+
+    <script>
+      function toggleSeeMore() {
+          if(document.getElementById("textarea").style.display == 'none') {
+              document.getElementById("textarea").style.display = 'block';
+              document.getElementById("seeMore").innerHTML = 'See less';
+          }
+          else {
+              document.getElementById("textarea").style.display = 'none';
+              document.getElementById("seeMore").innerHTML = 'See more';        
+          }
+      }
+      </script>
+
+
+    <!-- book Session -->
+    <div id="bookingModel" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-header">
+          <img
+            src="img2.jpg"
+            alt=""
+            width="50"
+            height="50"
+            style="border-radius: 50%">
+          <div class="model_header_title">
+            <div class="model_header_t1">Book a Session</div>
+          </div>
+        </div>
+        <div class="modal-body">
+          
+          <div class="date-navigation">
+            <button class="nav-btn" id="prevWeek">&lt;</button>
+            <div class="date-range" id="dateRange">Feb 13–19, 2024</div>
+            <button class="nav-btn" id="nextWeek">&gt;</button>
+          </div>
+          <div class="calendar-container">
+            <table class="calendar-table">
+              <thead>
+                <tr class="weekdays">
+                  <th>Tue</th>
+                  <th>Wed</th>
+                  <th>Thu</th>
+                  <th>Fri</th>
+                  <th>Sat</th>
+                  <th>Sun</th>
+                  <th>Mon</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- <tr class="dates"></tr> -->
+                <tr>
+                  <td></td>
+
+                  <td></td>
+                  <td class="slot-time2 link">6:30</td>
+                  <td class="slot-time2 link">4:30</td>
+                  <td></td>
+                  <td></td>
+                  <td class="slot-time2 link">10:30</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td class="slot-time2 link">6:30</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td class="slot-time2 link">6:30</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td class="slot-time2 link">6:30</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td class="slot-time2 link">6:30</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td class="slot-time2 link">6:30</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td class="slot-time2 link">6:30</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="slot-time2 link">6:50</td>
+                  <td class="slot-time2 link">9:30</td>
+                  <td></td>
+                  <td class="slot-time2 link">12:10</td>
+                  <td></td>
+                  <td class="slot-time2 link">2:20</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="slot-time2 link">6:30</td>
+                  <td></td>
+                  <td class="slot-time2 link">1:30</td>
+                  <td></td>
+                  <td></td>
+                  <td class="slot-time2 link">2:00</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="modal-footer">
+          
+          <div class="model_footer_zone">
+            <button class="confirm-time-btn" disabled>Confirm time</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Send Message -->
+    <div id="messageModel" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-header">
+          <div class="model_header_title">
+            <div class="model_header_t1">Martin H.</div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="body_content">
+            <div class="body_content_day">
+              <div class="body_item">Mon, 05 Feb</div>
+            </div>
+            <div class="model_content_side">
+              <img
+                src="img5.jpg"
+                alt=""
+                width="50"
+                height="50"
+                style="border-radius: 50%">
+              <div class="model_content_hi">Waad .H</div>
+            </div>
+            <div class="model_send">
+              <div>hi martin </div>
+            </div>
+            <div class="body_content_day">
+              <div class="body_item">Mon, 08 Feb</div>
+            </div>
+            <div class="model_content_side">
+              <img
+                src="img2.jpg"
+                alt=""
+                width="50"
+                height="50"
+                style="border-radius: 50%">
+              <div class="model_content_hi">Martin H.</div>
+            </div>
+            <div class="model_send">
+              <div>
+                hi there ! How are you ? are you looking to book an lesson
+                english?
+              </div>
+            </div>
+
+            <div class="model_textarea">
+              <textarea name=" " id="0" cols="30" rows="10" placeholder="your message" > </textarea>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var confirmTimeBtn = document.querySelector(".confirm-time-btn");
+
+      var modal = document.getElementById("bookingModel");
+      var modal2 = document.getElementById("messageModel");
+
+      var btn = document.getElementById("openModal");
+      var btn2 = document.getElementById("openModal2");
+
+      var span = document.getElementsByClassName("close")[0];
+      var span2 = document.getElementsByClassName("close")[1];
+
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+      btn2.onclick = function () {
+        modal2.style.display = "block";
+      };
+
+      span.onclick = function () {
+        modal.style.display = "none";
+        confirmTimeBtn.disabled = true;
+      };
+      span2.onclick = function () {
+        modal2.style.display = "none";
+        // confirmTimeBtn.disabled = true;
+      };
+    </script>
+    
+    <script>
+      var timeSlots2 = document.querySelectorAll(".slot-time2");
+      var confirmTimeBtn = document.querySelector(".confirm-time-btn");
+      var modal = document.getElementById("bookingModel"); 
+      function handleTimeSlot2Click() {
+        timeSlots2.forEach((slot) => {
+          slot.classList.remove("active");
+          slot.style.border = "";
+          slot.style.padding = ""; 
+        });
+        this.classList.add("active");
+        confirmTimeBtn.disabled = false;
+        this.style.border = "1px solid black";
+        this.style.padding = "5px";
+      }
+      timeSlots2.forEach(function (timeSlot) {
+        timeSlot.addEventListener("click", handleTimeSlot2Click);
+      });
+      confirmTimeBtn.addEventListener("click", function () {
+        modal.style.display = "none";
+        alert("Time confirmed successfully!");
+      });
+    </script>
+        <footer>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/talktandem" class="icon facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com/talktandem" class="icon twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/talktandem" class="icon instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/talktandem" class="icon linkedin"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:contact@talktandem.com" class="icon email"><i class="far fa-envelope"></i></a>
+          </div>
+          <p class="copyright">© 2024 Talk Tandem. All rights reserved.</p>
+        </footer>
+  </body>
+</html>
