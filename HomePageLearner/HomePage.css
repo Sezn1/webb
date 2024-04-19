@@ -42,7 +42,7 @@ header {
   font-weight: bold;
 }
 
-nav ul {
+ nav ul {
   list-style-type: none;
   display: flex;
 }
@@ -63,7 +63,14 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #273e81;
   color: #ffffff;
-}
+} 
+
+
+
+
+
+
+
 
 
 /* Main content styles */

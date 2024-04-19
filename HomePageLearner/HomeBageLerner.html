@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<!---------------------HEAD---------------------------->
+<head>
+
+    <meta charset="UTF-8" />
+    <title>Talk Tandem | Home </title>
+    <meta name="description" content="welcome to talk tandem , Learn with JOY" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Setting the viewport to make your website look good on all devices:-->
+    <meta name="keywords" content="Learn, Languages, education ">
+    <link rel="stylesheet" hreflink rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!--to use icons -->
+    <link rel="shortcut icon" href="Logo white .jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="HomePage.css">
+    <link rel="stylesheet" href="styleRequest.css">
+
+</head>
+
+
+<!---------------------BODY---------------------------->
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo bule.jpeg">
+            <h1>Talk Tandem</h1>
+        </div>
+
+        <nav class="mainMenu">
+            <ul>
+                <li><a href="#">Home</a></li>
+
+                <li class="dropdown">
+                    <a href="#Request">Request</a>
+                    <div class="dropdown-content">
+                        <a href="#">New</a>
+                        <a href="#">View</a>
+                        <a href="#">Current</a>
+                    </div> 
+                </li>
+                <li class="dropdown">
+                <a href="#language-list">View</a>
+                <div class="dropdown-content">
+                    <a href="#">Language Details</a>
+                    <a href="#">Previous Session</a>
+                    <a href="#">Current Session</a>
+                    <a href="#">Rate and review</a>
+                </div>
+                </li>
+                
+                <li><a href="#profile">Manage Profile</a></li>
+             
+                <li><a href="HomePage.html">Sign Out</a></li>
+            </ul> 
+        </nav>
+        
+    </header>
+
+    
+  
+	<div class="container">
+        <div class="text">
+            <h1>Speak with tandem</h1>
+            <p>Master any language by actually chatting with real people</p>
+        </div>
+        <div class="learner">
+            <img src="language-learner.png" alt="Language Learner">
+        </div>
+        
+        <form>
+          <label for="lang">Choose language:</label>
+          <input class="lang" list="language" name="lang" placeholder="Choose">
+          <datalist id="language">
+            <option value="English">
+            <option value="Spanish">
+            <option value="French">
+            <option value="Chinese">
+            <option value="Italian">
+            <option value="Korean">
+            <option value="Russian">
+            <option value="Japanese">
+            <option value="Other">
+          </datalist>
+          
+          <label>Choose your level:</label>
+          <div class="level-container">
+            <div>
+              <input  id="level1" type="radio" name="level">
+              <label for="level1">Beginner</label>
+              
+            </div>
+            <div>
+              <input  id="level2" type="radio" name="level">
+              <label for="level2">Pre-intermediate</label>
+              
+            </div>
+            <div>
+              <input  id="level3" type="radio" name="level">
+              <label for="level3">Intermediate</label>
+              
+            </div>
+            <div>
+              <input  id="level4" type="radio" name="level">
+              <label for="level4">Upper-Intermediate</label>
+              
+            </div>
+            <div>
+              <input  id="level5" type="radio" name="level">
+              <label for="level5">Advanced</label>
+              
+            </div>
+          </div>
+      
+          <label for="start-date">When do you want to start learning:</label>
+          <input type="date" id="start-date">
+      
+          <label for="duration">Choose course duration:</label>
+          <select name="duration" id="duration">
+            <option value="1">One month</option>
+            <option value="2">Two months</option>
+            <option value="3">Three months</option>
+            <option value="4">Four months</option>
+          </select>
+      
+          <button type="submit" class="btn">Submit</button>
+        </form>
+        </div>
+    <a href="#request" class="go">
+    </a>
+   
+    <label class="Current"><h3> Current requests</h3></label>
+    <section class="requests">
+        <div class="request">
+          <h3>first request</h3>
+          <p> <strong>Language : </strong>  English </p>
+          <p> <strong>Proficiency level :</strong>  Intermediate</p>
+          <p> <strong>The course begins :</strong>  04/11/2024</p>
+          <p> <strong>course duration : </strong> Three months </p>
+            <button class="Edit-button">Edit</button>
+            <button class="Delete-button">Delete</button>
+        </div>
+
+        <div class="request">
+            <h3>Second request</h3>
+            <p> <strong>Language : </strong>  Chinese </p>
+            <p> <strong>Proficiency level :</strong>  Beginner</p>
+            <p> <strong>The course begins :</strong>  01/08/2024</p>
+            <p> <strong>course duration : </strong> one month </p>
+            <br>
+            <strong> Congratulations! , your request has been accepted</strong>
+        </div>
+      </section>
+
+      <label class="view"><h3> View requests</h3></label>
+      <section class="requests">
+          <div class="request">
+            <h3>first request</h3>
+            <p> <strong>Language : </strong>  English </p>
+            <p> <strong>Proficiency level :</strong>  Intermediate</p>
+            <p> <strong>The course begins :</strong>  04/11/2024</p>
+            <p> <strong>course duration : </strong> Three months </p>
+            <br>
+            <strong> Pending </strong>
+          </div>
+  
+          <div class="request">
+              <h3>Second request</h3>
+              <p> <strong>Language : </strong>  Chinese </p>
+              <p> <strong>Proficiency level :</strong>  Beginner</p>
+              <p> <strong>The course begins :</strong>  01/08/2024</p>
+              <p> <strong>course duration : </strong> one month </p>
+              <br>
+              <strong> Accepted</strong>
+          </div>
+        </section>
+
+
+
+
+
+      </body>
+  </html>
+  
+  
+
+    
